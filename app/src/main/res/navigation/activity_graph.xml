@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_graph"
+    app:startDestination="@id/giftProvidersFragment">
+
+    <fragment
+        android:id="@+id/giftProvidersFragment"
+        tools:layout="@layout/fragment_gift_providers"
+        android:name="com.example.cardkeeper.ui.cards.GiftProvidersFragment"
+        android:label="GiftProvidersFragment" >
+        <action
+            android:id="@+id/action_giftProvidersFragment_to_giftDetailsFragment"
+            app:destination="@id/giftDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/giftDetailsFragment"
+        android:name="com.example.cardkeeper.ui.details.GiftDetailsFragment"
+        android:label="GiftDetailsFragment" />
+</navigation>
